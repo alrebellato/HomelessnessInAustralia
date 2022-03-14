@@ -1,0 +1,131 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Marko+One&display=swap');
+
+*{
+    margin: 0;
+    font: normal 14px 'Roboto Slab', 'Helvetica';
+}
+
+table, th, td {
+    border: 1px solid black;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.background{
+  padding-top: 60px; 
+  
+  background-image: url('3Images/Background.png');
+  background-color: grey;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100%;
+
+}
+
+
+/* Headings */
+h1{
+    font: normal 50px 'Roboto Slab', helvetica;
+}
+
+h2{
+  background-color: rgba(0,0,0,0);
+  padding: 15px;
+  text-align: center;
+}
+
+/* Flexbox */
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: min-content;
+    align-items: stretch;
+}
+
+.category {
+    background-color: rgb(196, 196, 196);
+    flex-basis:content;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    flex-grow: 0; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+    text-align: center; 
+}
+
+.catbtn {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 2px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  width: 180px;
+}
+
+.category p{
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.category input{
+  max-width: 40;
+  text-align: right;
+  border: none;
+  border-radius: 2px;
+}
+
+.category select{
+  border: none;
+  border-radius: 2px;
+}
+
+.category button{
+  border: none;
+  border-radius: 2px;
+}
+
+.table-holder{
+  padding: 10px;
+  border-radius:10px;
+  border: 1px, solid, black;
+  background-color: grey;
+  background-clip: border-box;
+  width: fit-content; 
+  margin:auto;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.329);
+}
+
+table{
+  border: none;
+}
+
+th, td{
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+th{
+  padding: 10px;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+}
+
+td{
+  padding-right: 10px;
+  text-align: right;
+}
+tr:hover{
+  background-color: lightblue;
+}

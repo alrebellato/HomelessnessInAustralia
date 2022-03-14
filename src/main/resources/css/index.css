@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+body {
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+}
+
+#two {
+    position: absolute;
+    top: 40px;
+    left: 1500px;
+}
+
+#three {
+    position: absolute;
+    top: 600px;
+    left: 40px;
+}
+
+#four {
+    position: absolute;
+    top: 600px;
+    left: 1500px;
+}
+
+#mg {
+    position: absolute;
+    left: 10px;
+    z-index: -1;
+}
+
+.header {
+    z-index: 1;
+}
+
+.header h1 {
+    font-family: Russo One;
+    font-size: 60px;
+    color: white;
+}
+
+.header p {
+    position: absolute;
+    top: 90%;
+    left: 35%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+ul {
+    position: absolute;
+    top: 110%;
+    left: 35%;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+.content {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.308);
+}

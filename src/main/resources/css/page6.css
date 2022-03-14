@@ -1,0 +1,567 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Marko+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mada&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+
+/* Standardisation */
+
+* {
+    margin: 0;
+    /* padding: 0; */
+}
+
+
+/* Scroll bar css start */
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #efc6cd;
+}
+
+*::-webkit-scrollbar-thumb {
+    /* background-color: rgba(35, 204, 255, 0.432); */
+    border-radius: 30px;
+    /* border: 2px solid rgb(235, 235, 235); */
+    background-color: #d1d0ec;
+}
+
+
+/* Standard Rules */
+
+
+/* TEXT HIGHLIGHT */
+
+::selection {
+    color: rgb(248, 248, 248);
+    background: rgba(255, 35, 90, 0.295);
+    text-shadow: 1px 1px 0 rgb(255, 0, 76);
+}
+
+body {
+    background-color: #C4C4C461;
+    padding: 15px 15px 0px 15px;
+    font: normal 12px arial, helvetica, sans-serif;
+    line-height: 1.4em;
+    /* margin: 40px auto 0 auto; */
+    margin-top: 40px;
+}
+
+.bod {
+    margin: 40px auto 0 auto;
+    width: 75%;
+}
+
+
+/* NAVIGATION */
+
+.topnav {
+    position: fixed;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    box-shadow: 0 20px 30px rgba(102, 102, 102, 0.329);
+    display: flex;
+    flex-flow: row wrap;
+    align-content: stretch;
+    margin-top: -55px;
+    margin-left: -1%;
+    z-index: 99;
+    backdrop-filter: blur(8px);
+    background-color: rgba(163, 163, 163, 0.329);
+}
+
+.topnav a {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+    font: normal 30px 'Roboto Slab', 'Helvetica';
+    text-decoration: none;
+    display: inline-block;
+    height: 100%;
+}
+
+
+/* Style The Dropdown Button */
+
+.topnav .dropbtnNAV {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.topnav .dropdownNAV {
+    position: relative;
+    display: inline-block;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.topnav .dropdown-contentNAV {
+    float: right;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/* Links inside the dropdown */
+
+.topnav .dropdown-contentNAV a {
+    float: left;
+    color: black;
+    width: 160px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
+    border-radius: 5px;
+}
+
+.topnav .dropdown-contentNAV a:hover {
+    background-image: linear-gradient(to left, #efc6cd, #d1d0ec);
+    text-shadow: 1px 1px 0 rgb(255, 162, 162);
+}
+
+
+/* Show the dropdown menu on hover */
+
+.topnav .dropdownNAV:hover .dropdown-contentNAV {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.topnav .dropdownNAV:hover .dropbtnNAV {
+    background-color: white;
+    color: black;
+}
+
+
+/* END NAVIGATION */
+
+.deepdive {
+    position: absolute;
+    top: 140px;
+    left: 76%;
+    width: 164px;
+    height: 91.95px;
+    font-family: Rubik Mono One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    color: #D3D3D3;
+}
+
+.slogan {
+    /* Short Slogan in bolded, eye-catching font */
+    position: relative;
+    width: fit-content;
+    height: auto;
+    left: -10px;
+    margin: 40px 0px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 2.2em;
+    color: #000000;
+    /* border: solid black; */
+}
+
+.decobox {
+    position: relative;
+    top: -10px;
+    width: 200px;
+    height: 8px;
+    background: #C4C4C4;
+    margin-left: -10px;
+    /* margin-bottom: 20px; */
+}
+
+.slogan h1 {
+    padding-top: 3px;
+}
+
+.querytitle {
+    font-family: Rubik Mono One;
+    font-style: italic;
+    font-weight: none;
+    font-size: 13px;
+    line-height: 30px;
+    color: rgb(81, 185, 255);
+    margin: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+}
+
+.querybox {
+    width: 100%;
+    height: fit-content;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.prompt {
+    padding: 20px;
+}
+
+.promptheader {
+    font-family: Rubik Mono One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+input[type=text] {
+    background-color: #202020;
+    width: 200px;
+    border: none;
+    font-family: Rubik Mono One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FF0000;
+}
+
+::placeholder {
+    color: #ff00009a;
+    text-align: center;
+}
+
+.output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .graph,
+    .info {
+        flex: 100%;
+    }
+}
+
+.graph {
+    flex: 1;
+    /* justify-content: center; */
+    align-self: center;
+    margin: 20px;
+}
+
+.graph img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    position: relative;
+    /* top: 10%; */
+    left: 5%
+}
+
+.info {
+    flex: 1;
+    /* border: solid rgba(0, 0, 0, 0.205); */
+    padding: 10px 33px;
+    align-self: center;
+    border: solid red 0.5px;
+    border-radius: 5px;
+    margin: 20px 50px;
+}
+
+.infolabel {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.infooutput {
+    font-family: Roboto Mono;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FF0000;
+}
+
+.secondinfo {
+    padding: 10px 33px;
+    align-self: center;
+    border: solid red 0.5px;
+    border-radius: 5px;
+    margin: 20px 50px;
+}
+
+.secondinfolabel {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.secondinfooutput {
+    font-family: Roboto Mono;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FF0000;
+}
+
+.sortedtable {
+    margin: 20px 50px;
+}
+
+.sortedtableheader {
+    color: rgb(124, 124, 124);
+    padding: 10px 0px 0px 0px;
+    font-family: Rubik Mono One;
+    font-style: oblique;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.sortedtabledescription {
+    position: relative;
+    left: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(126, 126, 126);
+    font-weight: 600;
+}
+
+.OLoutside {
+    height: fit-content;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    color: greenyellow;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    padding-bottom: 70px;
+}
+
+ol.horizontal {
+    list-style-type: decimal;
+    width: 100%;
+    height: fit-content;
+    background-color: blue;
+}
+
+ol.horizontal li {
+    float: left;
+    width: 250px;
+    background-color: black;
+    padding: 10px 0px;
+}
+
+
+/* Dropdown Buttons */
+
+
+/* Style The Dropdown Button */
+
+.dropbtnBOX {
+    background-color: #52525221;
+    color: #FF0000;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: Rubik Mono One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdownBOX {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdownBOX-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdownBOX-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdownBOX-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdownBOX:hover .dropdownBOX-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdownBOX:hover .dropbtnBOX {
+    background-color: #202020;
+}
+
+
+/* Footer */
+
+.footer {
+    margin: 90px auto 0 auto;
+    width: 75%;
+    height: 200px;
+    border-top: solid #efc6cd 5px;
+    border-right: solid #efc6cd 5px;
+    border-left: solid #efc6cd 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 20px;
+}
+
+.legal {
+    border-right: solid rgb(61, 61, 61);
+}
+
+.flcontent {
+    margin: 10px 0px 0px 20px;
+}
+
+.legal h3 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 100;
+}
+
+.legal p {
+    padding: 2px;
+}
+
+.sitemap {
+    display: flex;
+    border-right: solid rgb(61, 61, 61);
+    justify-content: space-between;
+}
+
+.sitemap h3 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 100;
+}
+
+.sitemap div {
+    margin-top: 30px;
+    margin-left: -40px;
+}
+
+.flearn {
+    flex: 1;
+}
+
+.flearn p {
+    position: relative;
+    top: 10px;
+    left: 9px;
+}
+
+.fhelp {
+    flex: 1;
+}
+
+.fhelp p {
+    position: relative;
+    top: 10px;
+    left: 9px;
+}
+
+.contact h3 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 100;
+}
+
+.ccontent {
+    margin: 10px 0px 0px 20px;
+}
+
+.ccontent p {
+    padding: 2px;
+}
